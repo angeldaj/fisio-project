@@ -1,14 +1,13 @@
 "use client";
 
 import * as React from "react";
-import useEmblaCarousel, {
-  type EmblaCarouselType,
-  type EmblaOptionsType,
-} from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
 import type { EmblaPluginType } from "embla-carousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { EmblaOptionsType } from "embla-carousel";
+import { EmblaCarouselType } from "embla-carousel";
 
 type CarouselProps = {
   opts?: EmblaOptionsType;
