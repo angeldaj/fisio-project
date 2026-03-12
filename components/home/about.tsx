@@ -13,7 +13,7 @@ export function About() {
             <div className="absolute -bottom-3 -right-3 -z-10 h-full w-full rounded-3xl border-2 border-primary/10" />
             <div className="absolute -bottom-5 -left-5 rounded-2xl border border-border bg-white p-4 shadow-xl shadow-black/5">
               <p className="font-[family-name:var(--font-display)] text-3xl font-semibold text-primary">+2</p>
-              <p className="text-[11px] font-medium text-muted">Anos de experiencia</p>
+              <p className="text-[11px] font-medium text-muted">años de experiencia</p>
             </div>
           </div>
 
