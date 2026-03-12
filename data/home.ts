@@ -43,6 +43,11 @@ export type GalleryImage = {
   alt: string;
 };
 
+export type ServiceOption = {
+  value: string;
+  label: string;
+};
+
 export const navItems: NavItem[] = [
   { href: "#servicios", label: "Servicios" },
   { href: "#sobre-mi", label: "Sobre mi" },
@@ -131,4 +136,15 @@ export const aboutGallery: GalleryImage[] = [
   { src: "/gallery/g3.jpeg", alt: "Trabajo clinico en rehabilitacion" },
   { src: "/gallery/g4.jpeg", alt: "Atencion fisioterapeutica en camilla" },
   { src: "/gallery/g5.jpeg", alt: "Tratamiento y evaluacion funcional" },
+];
+
+export const whatsappNumber = "584148866547";
+
+export const serviceOptions: ServiceOption[] = [
+  { value: "deportiva", label: "Fisioterapia Deportiva" },
+  { value: "rehabilitacion", label: "Rehabilitacion" },
+  { value: "dolor-cronico", label: "Dolor Cronico" },
+  { value: "terapia-manual", label: "Terapia Manual" },
+  { value: "ejercicio", label: "Ejercicio Terapeutico" },
+  { value: "valoracion", label: "Valoracion Funcional" },
 ];

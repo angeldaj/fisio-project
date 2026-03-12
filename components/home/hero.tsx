@@ -10,7 +10,7 @@ export function Hero() {
           className="absolute inset-0"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&q=80')",
+              "url('/hero.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -59,6 +59,30 @@ export function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </a>
+            </div>
+
+            <div className="mt-12 lg:hidden">
+              <div className="relative mx-auto w-full max-w-xs">
+                <div className="absolute -left-4 top-8 h-32 w-32 rounded-full bg-white/8 blur-3xl" />
+                <div className="absolute -bottom-6 right-0 h-28 w-28 rounded-full bg-primary-50/10 blur-3xl" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl shadow-black/25 backdrop-blur-md">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-[1.5rem]">
+                    <Image
+                      src="/photo2.jpeg"
+                      alt="Sesion de fisioterapia"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1023px) 80vw, 28rem"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/30 via-transparent to-transparent" />
+                  </div>
+                </div>
+                <div className="absolute -bottom-4 -left-2 rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur-md">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-white/55">Atencion</p>
+                  <p className="mt-1 text-xs font-semibold text-white">Personalizada y cercana</p>
+                </div>
+              </div>
             </div>
 
             <div className="animate-fade-in-up delay-400 mt-16 flex items-center gap-8 border-t border-white/10 pt-8">

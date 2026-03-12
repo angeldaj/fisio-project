@@ -12,7 +12,7 @@ export function CtaBanner() {
       <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-white/5" />
       <div className="relative mx-auto max-w-3xl px-6 text-center">
         <h2 className="font-[family-name:var(--font-display)] text-3xl font-medium text-white md:text-4xl">
-          Listo para empezar tu recuperacion?
+          ¿Listo para empezar tu recuperacion?
         </h2>
         <p className="mx-auto mt-4 max-w-md text-base text-white/60">
           Da el primer paso hacia tu bienestar. Consulta sin compromiso.

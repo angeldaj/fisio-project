@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { navItems } from "@/data/home";
 
 export function Navbar() {
@@ -5,8 +7,15 @@ export function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-border/50 bg-white/90 backdrop-blur-2xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-white">MH</span>
+          <div className="relative h-10 w-10 overflow-hidden rounded-lg">
+            <Image
+              src="/logo.png"
+              alt="Logo Maria Hernandez"
+              fill
+              className="object-contain"
+              sizes="40px"
+              priority
+            />
           </div>
           <div className="leading-tight">
             <span className="text-sm font-bold tracking-tight text-foreground">Maria Hernandez</span>

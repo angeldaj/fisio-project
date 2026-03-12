@@ -24,7 +24,7 @@ export function About() {
             />
             <div className="mt-8 space-y-4 text-[15px] leading-relaxed text-muted">
               <p>
-                Soy <strong className="font-semibold text-foreground">Maria Hernandez</strong>, fisioterapeuta colegiada con mas de 2 anos de experiencia especializada en fisioterapia deportiva y rehabilitacion funcional.
+                Mi nombre es <strong className="font-semibold text-foreground">Maria Hernandez</strong>, fisioterapeuta colegiada con mas de 2 años de experiencia especializada en fisioterapia deportiva y rehabilitacion funcional.
               </p>
               <p>
                 Mi enfoque combina las tecnicas mas actuales basadas en evidencia cientifica con un trato cercano y personalizado. Cada paciente es unico y merece un plan de tratamiento disenado especificamente para sus necesidades.

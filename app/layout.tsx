@@ -15,9 +15,14 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "María Hernández — Fisioterapia Deportiva y Rehabilitación",
+  title: "Maria Hernandez - Fisioterapia Deportiva y Rehabilitacion",
   description:
-    "Fisioterapeuta especializada en fisioterapia deportiva, rehabilitación y dolor crónico. Tratamientos personalizados basados en evidencia en Madrid.",
+    "Fisioterapeuta especializada en fisioterapia deportiva, rehabilitacion y dolor cronico. Tratamientos personalizados basados en evidencia.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -27,9 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${dmSans.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>
