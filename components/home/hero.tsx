@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { heroStats } from "@/data/home";
 
 export function Hero() {
@@ -74,13 +76,25 @@ export function Hero() {
           </div>
 
           <div className="hidden lg:flex lg:justify-end">
-            <div className="animate-float relative">
-              <div className="h-80 w-80 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm" />
-              <div className="absolute left-10 top-10 h-60 w-60 rounded-full border border-white/5 bg-white/[0.03]" />
-              <div className="absolute -bottom-4 -right-4 flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md">
-                <svg className="h-10 w-10 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                </svg>
+            <div className="animate-float relative w-full max-w-sm">
+              <div className="absolute -left-6 top-10 h-48 w-48 rounded-full bg-white/8 blur-3xl" />
+              <div className="absolute -bottom-8 right-0 h-44 w-44 rounded-full bg-primary-50/10 blur-3xl" />
+              <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl shadow-black/25 backdrop-blur-md">
+                <div className="relative aspect-[3/4] overflow-hidden rounded-[1.5rem]">
+                  <Image
+                    src="/photo2.jpeg"
+                    alt="Sesión de fisioterapia"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 28rem, 100vw"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/30 via-transparent to-transparent" />
+                </div>
+              </div>
+              <div className="absolute -bottom-4 -left-4 rounded-2xl border border-white/10 bg-white/10 px-5 py-4 backdrop-blur-md">
+                <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-white/55">Atencion</p>
+                <p className="mt-1 text-sm font-semibold text-white">Personalizada y cercana</p>
               </div>
             </div>
           </div>

@@ -38,6 +38,11 @@ export type ScheduleItem = {
   open: boolean;
 };
 
+export type GalleryImage = {
+  src: string;
+  alt: string;
+};
+
 export const navItems: NavItem[] = [
   { href: "#servicios", label: "Servicios" },
   { href: "#sobre-mi", label: "Sobre mi" },
@@ -99,24 +104,31 @@ export const processSteps: ProcessStep[] = [
 ];
 
 export const credentials: Credential[] = [
-  { label: "Grado en Fisioterapia", place: "Universidad Complutense" },
-  { label: "Master Terapia Manual", place: "Formacion continua" },
+  { label: "Técnico Superior en Fisioterapia", place: "UTD Francisco Tamayo" },
+  { label: "Licenciada en Fisioterapia", place: "UTD Francisco Tamayo" },
   { label: "Fisioterapia Deportiva", place: "Especializacion avanzada" },
-  { label: "Colegiada n. XXXX", place: "CPFCM Madrid" },
 ];
 
 export const contactItems: ContactItem[] = [
-  { label: "Telefono", value: "+1234 567 890", icon: "phone" },
-  { label: "Email", value: "maria@fisiohernandez.com", icon: "email" },
+  { label: "Telefono", value: "+58 414 886 6547", icon: "phone" },
+  { label: "Email", value: "mariaahv23@gmail.com", icon: "email" },
   {
     label: "Direccion",
-    value: "Urb. Sierra Parima - Ciudad Guayana, Bolivar",
+    value: "C.C Alta Vista 1, Piso 3, Local 6 - Gimnasio Fitness Evolution",
     icon: "location",
   },
 ];
 
 export const schedule: ScheduleItem[] = [
-  { day: "Lunes - Viernes", hours: "09:00 - 20:00", open: true },
-  { day: "Sabados", hours: "09:00 - 14:00", open: true },
+  { day: "Lunes - Viernes", hours: "08:00 AM - 06:00 PM", open: true },
+  { day: "Sabados", hours: "08:00 AM - 01:00 PM", open: true },
   { day: "Domingos", hours: "Cerrado", open: false },
+];
+
+export const aboutGallery: GalleryImage[] = [
+  { src: "/gallery/g1.jpeg", alt: "Maria Hernandez en consulta" },
+  { src: "/gallery/g2.jpeg", alt: "Sesion de fisioterapia personalizada" },
+  { src: "/gallery/g3.jpeg", alt: "Trabajo clinico en rehabilitacion" },
+  { src: "/gallery/g4.jpeg", alt: "Atencion fisioterapeutica en camilla" },
+  { src: "/gallery/g5.jpeg", alt: "Tratamiento y evaluacion funcional" },
 ];

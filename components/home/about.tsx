@@ -1,5 +1,6 @@
 import { credentials } from "@/data/home";
 
+import { AboutCarousel } from "./about-carousel";
 import { SectionHeading } from "./section-heading";
 
 export function About() {
@@ -8,16 +9,7 @@ export function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-5">
           <div className="relative lg:col-span-2">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-3xl bg-surface">
-              <div className="flex h-full items-center justify-center">
-                <div className="text-center">
-                  <svg className="mx-auto mb-3 h-14 w-14 text-primary/15" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.8}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                  </svg>
-                  <p className="text-xs text-muted">Foto</p>
-                </div>
-              </div>
-            </div>
+            <AboutCarousel />
             <div className="absolute -bottom-3 -right-3 -z-10 h-full w-full rounded-3xl border-2 border-primary/10" />
             <div className="absolute -bottom-5 -left-5 rounded-2xl border border-border bg-white p-4 shadow-xl shadow-black/5">
               <p className="font-[family-name:var(--font-display)] text-3xl font-semibold text-primary">+2</p>
